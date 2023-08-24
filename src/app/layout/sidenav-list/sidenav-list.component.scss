@@ -1,0 +1,70 @@
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover, a:active{
+  color: lightgray;
+}
+.nav-caption{
+  display: inline-block;
+  padding-left: 6px;
+}
+button.btn.login {
+  background-color: #27b5af;
+  width: 112px;
+   border-radius: 34px;
+  color: white;
+   font-size: 14px;
+   margin-top: 25px;
+   margin-left: 7px;
+        margin-right: 8px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+
+
+
+}
+button.btn.register {
+  background-color: #f1f1f1;
+      width: 112px;
+   border-radius: 34px;
+   color: #1b1834;
+   font-size: 14px;
+   margin-top: 25px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-height: 50px;
+
+}
+span.nav-caption {
+  color: #495057;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: center;
+}
+mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color{
+  color: #495057;
+
+}
+button.btn.login {
+  background-color: #F8A22F;
+    width: 60%;
+      border-radius: 34px;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+}

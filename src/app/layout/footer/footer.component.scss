@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;}
+
+
+header {
+  background-color: #ffffff;
+
+}
+
+.main-nav {
+  height: 80px;
+  margin-left:100px;
+
+}
+
+
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 500px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: "AstroSpace", sans-serif;
+
+}
+
+
+.img {
+        color: white;
+        line-height: 90px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 10px;
+        font-family: "AstroSpace", sans-serif;
+
+}
+
+.main-nav.dropdown ul a i {
+  font-size: 12px;
+  line-height: 5px;
+}
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 10px;
+  margin-top:30px;
+  padding: 0;
+  margin-left:100px;
+
+
+
+}
+h1,h2,h3,h4,h5{
+  line-height: 16px;
+  font-family: "Montserrat", sans-serif;
+
+
+
+}
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+
+.navlinks ul {
+  line-height: 11px;
+  width:210px;
+  height:13vh;
+
+
+}
+
+.navlinks li a {
+  color:gray;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s linear 0s;
+  line-height: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size:14px;
+  margin-top:-10px;
+
+}
+
+.navlinks li a:hover {
+  color: #FF9800;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #FF9800;
+}
+
+li a.contact {
+  background-color:#FF9800;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+
+}
+
+li a.contact:hover {
+  background-color: #FF9800;
+  color: white;
+  border-bottom: none;
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 30px;
+  color:black;
+  float: right;
+  line-height: 100px;
+  margin-right: 50px;
+  display: none;
+  cursor: pointer;
+
+
+
+
+
+
+}
+
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #cbcdcf;
+    line-height: 60px;
+
+
+  }
+
+
+  #check
+{display:none;
+}
+
+  .navlinks li {
+    display: block;
+
+  }
+
+  .navlinks li a {
+    font-size: 15px;
+
+  }
+
+  .navlinks ul{
+width:30%;
+height:40vh;
+line-height: 5px;
+
+
+  }
+   .get-started-btn  {
+
+    height:40px;
+    line-height:15px;
+
+
+
+
+
+  }
+  .main-nav .dropdown ul{
+    height:120px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+    width:15px;
+
+  }
+
+  .menu-btn {
+    display: block;
+
+
+
+
+  }
+
+  #check:checked ~ .navlinks {
+    right: 0;
+    float:left;
+  }
+
+
+
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+    display: relative;
+
+
+
+
+  }
+
+  .menu-btn:focus {
+    color: blue;
+  }
+
+}
+
+
+.main-nav .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 28px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.8s;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+
+
+}
+.main-nav.dropdown ul li {
+  min-width: 90px;
+
+}
+
+.main-nav .dropdown li a:hover {
+  color: #FF9800;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #FF9800;
+}
+.main-nav.dropdown ul a i {
+  font-size: 12px;
+}
+.main-nav.dropdown ul a:hover, .main-nav .dropdown ul .active:hover, .main-nav .dropdown ul li:hover > a {
+  color: #FF9800;
+}
+.main-nav .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.main-nav .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.main-nav .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .main-nav .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .main-nav .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#header.fixed-top {
+  height: 50px;
+}
+#header .logo {
+  width: 40%;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#header .logo a {
+  color: #222222;
+  font-weight: 1000;
+}
+#header .logo a span {
+  color: #106eea;
+}
+#header .logo img {
+  max-height: 50px;
+  margin-top:11px;
+
+}
+
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+.get-started-btn {
+  margin-right:-22%;
+  background: #2E3191;
+  color: #fff;
+  border-radius: 70px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  height:30px;
+
+}
+.get-started-btn1{
+  margin-left:-50%;
+
+}
+.get-started-btn:hover {
+  background: #2E3191;
+  color: #fff;
+}
+
+
+
+#header{
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+
+
+
+    position: relative;
+
+}
+#header.fixed-top {
+  height: 300px;
+
+}
+.bi-facebook::before {
+  content: "\f344";
+  color:  #1b1834;;
+  margin-right: 16px;
+  font-size: 22px;
+  margin-left: 15px;
+}
+.bi-instagram::before {
+  content: "\f437";
+  color:  #1b1834;;
+  margin-right: 16px;
+  font-size: 22px;
+}
+.bi-twitter::before {
+  color:  #1b1834;;
+  margin-right: 16px;
+  font-size: 22px;
+}
+.bi-linkedin::before {
+
+  color:  #1b1834;;
+  margin-right: 16px;
+  font-size: 22px;
+}
+.footer-top {
+  background: white;
+}
+img {
+  margin-bottom: 16px !important;
+  margin-top: 16px !important;
+}
+.social{
+  display: block;
+  margin-top: auto;
+  margin-block: auto;
+}

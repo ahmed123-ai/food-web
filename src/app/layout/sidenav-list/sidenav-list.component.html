@@ -1,0 +1,30 @@
+<mat-nav-list   >
+
+  <a routerLink="/" class="logo">
+
+    <img src="assets/images/logo.png"   style="height:-40px;"></a>
+
+  <a mat-list-item (click)="navigateToPresentation()" >
+<span class="nav-caption"   >    About</span>
+  </a>
+  <a mat-list-item (click)="navigateToFood()" >
+      <span class="nav-caption">   Our Food</span>
+  </a>
+  <a mat-list-item  (click)="navigateToPlan()"    >
+
+    <span class="nav-caption"  >   Plan</span>
+  </a>
+
+
+
+
+
+
+  <div (click)="navigateToContact()" >
+    <button type="button"   class="btn login"> <i class="bi bi-person-rolodex"></i> CONTACT US</button>
+   </div>
+
+
+
+</mat-nav-list>
+

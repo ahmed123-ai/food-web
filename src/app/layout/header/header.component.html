@@ -1,0 +1,56 @@
+
+ <mat-toolbar >
+
+ <nav class="navbar navbar-expand-lg bg-light">
+
+
+    <div class="container-fluid">
+
+
+      <a routerLink="/" class="logo">
+          <img src="assets/images/logo.png" alt="">  </a>
+      <!-- <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>      -->
+      <div fxHide.gt-xs class="menu-button">
+        <button mat-icon-button (click)="onToggleSidenav()" >
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+
+      <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs class="d-flex justify-content-end">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" routerLinkActive="active"
+                aria-current="page" (click)="navigateToPresentation()">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" routerLinkActive="active"
+                aria-current="page"  (click)="navigateToFood()"  >OUR FOOD </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" routerLinkActive="active"
+                aria-current="page"   (click)="navigateToPlan()" >PLAN </a>
+            </li>
+
+          </ul>
+          <div >
+            <button type="button"   class="btn login" (click)="navigateToContact()">CONTACT US</button>
+           </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</mat-toolbar>
